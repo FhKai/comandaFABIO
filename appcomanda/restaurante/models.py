@@ -2,6 +2,7 @@ from django.db import models
 
 class Restaurante(models.Model):
     nome = models.CharField(max_length=50)
+    slug = models.SlugField()
     descricao = models.CharField(max_length=255)
 #    foto = models.FileField(upload_to='static/restaurante/fotosRestaurante/')
     endereco = models.CharField(max_length=140)

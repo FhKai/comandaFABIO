@@ -7,7 +7,7 @@
     <div class='restaurantes'>
       {% for restaurante in restaurantes %}
       <div class='restaurante'>
-        <h2> <a href="#">{{restaurante.nome}}</a></h2>
+        <h2> <a href="{%url 'detalhes' slug=restaurante.slug %}">{{restaurante.nome}}</a></h2>
         <p>{{restaurante.descricao}}</p>
         <p>Cozinha: {{restaurante.cozinha}}</p>
       </div>

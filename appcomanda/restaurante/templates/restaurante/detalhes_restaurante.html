@@ -1,0 +1,12 @@
+{% extends 'base_layout.html' %}
+
+{% block content %}
+<div class='detalhes-restaurante'>
+  <div class='restaurante'>
+    <h2>{{restaurante.nome}}</h2>
+    <p>{{restaurante.descricao}}</p>
+    <p>Cozinha: {{restaurante.cozinha}}</p>
+  </div>
+</div>
+
+{% endblock %}
